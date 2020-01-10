@@ -6,5 +6,5 @@ package com.example.demo.model;
  */
 
 public enum OrderState {
-    INIT,PAID,BREWING,BRWED,TAKEN,CANCELLED
+    INIT, PAID, BREWING, BRWED, TAKEN, CANCELLED
 }

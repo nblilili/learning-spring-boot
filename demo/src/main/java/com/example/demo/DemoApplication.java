@@ -47,14 +47,14 @@ public class DemoApplication implements ApplicationRunner {
         findOrders();
     }
 
-    private void initOrders(){
+    private void initOrders() {
         Coffee latte = Coffee.builder().name("latte")
-                .price(Money.of(CurrencyUnit.of("CNY"),30.0)).build();
+                .price(Money.of(CurrencyUnit.of("CNY"), 30.0)).build();
         coffeeRepository.save(latte);
         log.info("Coffee: {}", latte);
 
         Coffee expresso = Coffee.builder().name("expresso")
-                .price(Money.of(CurrencyUnit.of("CNY"),20.0)).build();
+                .price(Money.of(CurrencyUnit.of("CNY"), 20.0)).build();
         coffeeRepository.save(expresso);
         log.info("expresso: {}", expresso);
 
@@ -76,7 +76,7 @@ public class DemoApplication implements ApplicationRunner {
 
     }
 
-    private void findOrders(){
+    private void findOrders() {
         coffeeRepository.findAll(Sort.by(Sort.Direction.DESC, "id"))
                 .forEach(c -> log.info("Loading {}", c));
 

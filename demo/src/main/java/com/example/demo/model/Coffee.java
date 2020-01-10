@@ -30,5 +30,4 @@ public class Coffee extends BaseEntity implements Serializable {
     private Money price;
 
 
-
 }
