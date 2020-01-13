@@ -16,7 +16,7 @@ import java.util.Date;
  * @date 2020/1/9 13:33
  */
 @Entity
-@Table(name = "T_MENU")
+@Table(name = "T_COFFEE")
 @Builder
 @Data
 @ToString(callSuper = true)
